@@ -9,13 +9,13 @@ public class HelloController {
 
 
     //ACCEDER A VALORES DEL APPLICATION PROPERTIES
-    @Value("${app.varexample}")
-    String message;
+  //  @Value("${app.varexample}")
+  //  String message;
 
 
     @GetMapping("/hola")
     public String enviarSaludo(){
-        System.out.println(message);
+        System.out.println("hola");
         return "Hello users!";
 
     }
